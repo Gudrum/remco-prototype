@@ -1,2 +1,201 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>REMCO App — OSWIP</title><style>
-body{margin:0;font-family:Inter,Arial,sans-serif;background:#eef3fb;color:#111827}.wrap{min-height:100vh;display:grid;place-items:center;padding:30px}.phone{width:360px;max-width:95vw;background:#fff;border:10px solid #101828;border-radius:42px;overflow:hidden;box-shadow:0 28px 80px rgba(16,24,40,.25)}.status{height:28px;background:#101828}.hero{padding:22px;background:linear-gradient(135deg,#245cff,#1736aa);color:#fff}.hero h1{margin:0 0 5px;font-size:25px}.hero p{margin:0;opacity:.8;font-size:13px}.body{padding:18px}.card{border:1px solid #e6eaf0;border-radius:18px;padding:16px;margin-bottom:14px}.thumb{height:150px;border-radius:14px;background:url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80') center/cover}.row{display:flex;justify-content:space-between;gap:12px;align-items:center}.muted{color:#667085;font-size:12px}.btn{border:0;background:#255cff;color:#fff;border-radius:12px;padding:12px 14px;font-weight:700;width:100%;margin-top:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{background:#f6f8fb;border-radius:14px;padding:14px}.nav{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e6eaf0;padding:10px 4px;color:#667085;font-size:11px;text-align:center}.active{color:#255cff;font-weight:700}</style></head><body><div class="wrap"><div class="phone"><div class="status"></div><div class="hero"><h1>Hola, Andrés</h1><p>Tu movilidad, en un solo lugar.</p></div><div class="body"><div class="card"><div class="thumb"></div><div class="row" style="margin-top:12px"><div><b>Toyota RAV4</b><div class="muted">Reserva R-1048</div></div><div><b>24–28 Oct</b><div class="muted">Quito</div></div></div><button class="btn">Ver mi reserva</button></div><div class="grid"><div class="mini"><b>Contrato</b><div class="muted" style="margin-top:6px">Firmado y disponible</div></div><div class="mini"><b>Documentos</b><div class="muted" style="margin-top:6px">Licencia validada</div></div><div class="mini"><b>Extender</b><div class="muted" style="margin-top:6px">Solicita más días</div></div><div class="mini"><b>Asistencia</b><div class="muted" style="margin-top:6px">Contacta a REMCO</div></div></div></div><div class="nav"><div class="active">Inicio</div><div>Reservas</div><div>Documentos</div><div>Perfil</div></div></div></div></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>REMCO Pocket — App Demo</title>
+  <meta name="theme-color" content="#0a0e13">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <div class="demo-frame">
+    <aside class="demo-copy">
+      <a href="index.html" class="back-site">← Volver al sitio</a>
+      <span class="demo-eyebrow">REMCO POCKET · INTERACTIVE DEMO</span>
+      <h1>El alquiler no termina cuando entregamos las llaves.</h1>
+      <p>La app acompaña al cliente antes, durante y después del viaje: reservas, documentos, asistencia, extensión y cierre.</p>
+      <div class="demo-tags"><span>Mobile first</span><span>Odoo connected</span><span>Digital wallet</span><span>Trip control</span></div>
+      <small>Diseñado por OSWIP Technologies · Demo conceptual 2026</small>
+    </aside>
+
+    <main class="phone-shell">
+      <div class="phone-status"><span>9:41</span><span>●●● ︎▰</span></div>
+
+      <section class="app-view active" data-view="home">
+        <header class="app-header">
+          <div><small>Buenas tardes</small><h2>Andrés</h2></div>
+          <button class="avatar">AM</button>
+        </header>
+
+        <article class="trip-hero">
+          <div class="trip-image">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=88" alt="Toyota RAV4">
+            <span class="trip-status"><i></i> Próximo viaje</span>
+            <div class="image-gradient"></div>
+            <div class="trip-car-title"><small>SUV · AUTOMÁTICO</small><strong>Toyota RAV4</strong></div>
+          </div>
+          <div class="trip-meta">
+            <div><small>Retiro</small><strong>24 Oct · 10:00</strong><span>Quito UIO</span></div>
+            <div class="meta-line"></div>
+            <div><small>Devolución</small><strong>28 Oct · 18:00</strong><span>Quito UIO</span></div>
+          </div>
+          <button class="primary-app-btn" data-open-trip>Ver mi viaje <span>↗</span></button>
+        </article>
+
+        <div class="quick-title"><strong>Todo listo para salir</strong><span>3 de 3</span></div>
+        <div class="quick-grid">
+          <button class="quick-card success" data-open-docs><span>✓</span><strong>Licencia</strong><small>Validada</small></button>
+          <button class="quick-card success" data-open-docs><span>✓</span><strong>Contrato</strong><small>Firmado</small></button>
+          <button class="quick-card" data-open-qr><span>⌁</span><strong>Check-in</strong><small>QR listo</small></button>
+        </div>
+
+        <section class="discover-strip">
+          <div class="strip-head"><div><small>Para tu próximo escape</small><h3>Cuenca weekend</h3></div><button data-nav="explore">Explorar</button></div>
+          <div class="strip-media"><img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1000&q=82" alt="Carretera"></div>
+        </section>
+      </section>
+
+      <section class="app-view" data-view="explore">
+        <header class="explore-header">
+          <div><small>EXPLORE</small><h2>Encuentra tu próximo vehículo.</h2></div>
+          <button class="filter-icon">≡</button>
+        </header>
+        <div class="app-search"><span>⌕</span><input id="appSearch" placeholder="Buscar vehículo o categoría"></div>
+        <div class="app-chips">
+          <button class="active" data-app-filter="all">Todos</button>
+          <button data-app-filter="suv">SUV</button>
+          <button data-app-filter="sedan">Sedán</button>
+          <button data-app-filter="premium">Premium</button>
+        </div>
+        <div class="app-fleet">
+          <article class="app-car-card" data-app-category="suv" data-app-name="Toyota RAV4" data-app-price="58" data-app-image="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=88">
+            <div class="app-car-media"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=88"><span>Available</span></div>
+            <div class="app-car-info"><div><small>SUV · AUTO</small><strong>Toyota RAV4</strong><p>5 pax · AWD · 3 maletas</p></div><div class="app-price"><b>$58</b><small>/día</small></div></div>
+          </article>
+          <article class="app-car-card" data-app-category="sedan" data-app-name="Kia K3" data-app-price="39" data-app-image="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=88">
+            <div class="app-car-media"><img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=88"><span>Available</span></div>
+            <div class="app-car-info"><div><small>SEDÁN · AUTO</small><strong>Kia K3</strong><p>5 pax · FWD · 2 maletas</p></div><div class="app-price"><b>$39</b><small>/día</small></div></div>
+          </article>
+          <article class="app-car-card" data-app-category="premium" data-app-name="Volvo XC60" data-app-price="92" data-app-image="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=88">
+            <div class="app-car-media"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=88"><span>Premium</span></div>
+            <div class="app-car-info"><div><small>PREMIUM · AWD</small><strong>Volvo XC60</strong><p>5 pax · Hybrid · 4 maletas</p></div><div class="app-price"><b>$92</b><small>/día</small></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="trips">
+        <header class="simple-header"><small>MY TRIPS</small><h2>Tus viajes.</h2></header>
+        <div class="segmented"><button class="active">Próximos</button><button>Historial</button></div>
+        <article class="trip-list-card" data-open-trip>
+          <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=700&q=85" alt="">
+          <div><small>24 — 28 OCT</small><strong>Toyota RAV4</strong><span>Quito · Reserva R-1048</span></div>
+          <b>›</b>
+        </article>
+        <div class="empty-past">
+          <span>∞</span><strong>Tu historial vive aquí</strong><p>Facturas, contratos y actas permanecerán disponibles para consulta.</p>
+        </div>
+      </section>
+
+      <section class="app-view" data-view="wallet">
+        <header class="simple-header"><small>DIGITAL WALLET</small><h2>Todo lo importante, contigo.</h2></header>
+        <div class="wallet-stack">
+          <article class="wallet-card license-card"><small>LICENCIA</small><strong>Andrés Martínez</strong><span>EC · Vigente hasta 2029</span><div class="wallet-code">A•••••••48</div></article>
+          <article class="wallet-card contract-card"><small>CONTRATO REMCO</small><strong>R-1048</strong><span>Firmado digitalmente</span><div class="signed">✓ SIGNED</div></article>
+        </div>
+        <div class="doc-list">
+          <button data-open-docs><span>▤</span><div><strong>Contrato de alquiler</strong><small>PDF · Firmado</small></div><b>›</b></button>
+          <button data-open-docs><span>◇</span><div><strong>Factura</strong><small>Disponible al cierre</small></div><b>›</b></button>
+          <button data-open-docs><span>◫</span><div><strong>Acta de entrega</strong><small>Inspección + fotos</small></div><b>›</b></button>
+        </div>
+      </section>
+
+      <nav class="bottom-nav">
+        <button class="active" data-nav="home"><span>⌂</span><small>Inicio</small></button>
+        <button data-nav="explore"><span>⌕</span><small>Explorar</small></button>
+        <button data-nav="trips"><span>◫</span><small>Viajes</small></button>
+        <button data-nav="wallet"><span>◇</span><small>Wallet</small></button>
+      </nav>
+
+      <div class="app-sheet" id="carSheet">
+        <div class="sheet-handle"></div>
+        <button class="sheet-close" data-close-sheet>×</button>
+        <div class="sheet-car-image"><img id="sheetCarImage" src="" alt=""></div>
+        <div class="sheet-body">
+          <small>SUV · AUTOMÁTICO</small>
+          <h2 id="sheetCarName">Toyota RAV4</h2>
+          <div class="sheet-specs"><span>5 pax</span><span>AWD</span><span>Auto</span><span>3 maletas</span></div>
+          <p>Un vehículo versátil para ciudad, carretera y escapadas. El demo permite simular el paso directo de descubrimiento a reserva.</p>
+          <div class="sheet-price"><div><small>Desde</small><strong id="sheetCarPrice">$58/día</strong></div><button id="sheetBookBtn">Reservar</button></div>
+        </div>
+      </div>
+
+      <div class="app-sheet" id="tripSheet">
+        <div class="sheet-handle"></div>
+        <button class="sheet-close" data-close-sheet>×</button>
+        <div class="trip-sheet-hero"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=88"><div><small>R-1048</small><h2>Toyota RAV4</h2><span>24 — 28 Oct · Quito</span></div></div>
+        <div class="trip-timeline">
+          <div class="done"><span>✓</span><div><strong>Reserva confirmada</strong><small>18 Oct · 15:42</small></div></div>
+          <div class="done"><span>✓</span><div><strong>Documentos listos</strong><small>Licencia + contrato</small></div></div>
+          <div class="active"><span>3</span><div><strong>Retiro</strong><small>24 Oct · 10:00 · UIO</small></div></div>
+          <div><span>4</span><div><strong>Devolución</strong><small>28 Oct · 18:00 · UIO</small></div></div>
+        </div>
+        <div class="trip-actions"><button data-extend-trip>Extender viaje</button><button data-open-qr>Check-in QR</button><button>Contactar soporte</button></div>
+      </div>
+
+      <div class="center-modal" id="qrModal">
+        <button class="modal-x" data-close-center>×</button>
+        <small>DIGITAL CHECK-IN</small>
+        <h2>Muéstralo al retirar.</h2>
+        <div class="fake-qr">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <strong>R-1048 · Andrés M.</strong>
+        <p>Identifica reserva, conductor y vehículo en la entrega.</p>
+      </div>
+
+      <div class="center-modal" id="docsModal">
+        <button class="modal-x" data-close-center>×</button>
+        <small>DOCUMENT WALLET</small>
+        <h2>Documentación lista.</h2>
+        <div class="doc-preview"><span>REMCO</span><strong>Rental Agreement</strong><p>R-1048 · Toyota RAV4</p><div>✓ Firmado digitalmente</div></div>
+        <button class="primary-app-btn" data-close-center>Listo</button>
+      </div>
+
+      <div class="booking-mini" id="miniBooking">
+        <div class="mini-book-top"><button id="miniBack">←</button><span id="miniStepTitle">Tu viaje</span><button data-close-mini>×</button></div>
+        <div class="mini-step active" data-mini-step="1">
+          <small>STEP 1 / 3</small><h2>Elige fechas.</h2>
+          <label><span>Retiro</span><input id="miniPickup" type="date"></label>
+          <label><span>Devolución</span><input id="miniReturn" type="date"></label>
+          <div class="mini-selected"><img id="miniCarImage" src=""><div><strong id="miniCarName">Toyota RAV4</strong><small id="miniCarPrice">$58/día</small></div></div>
+        </div>
+        <div class="mini-step" data-mini-step="2">
+          <small>STEP 2 / 3</small><h2>Tu información.</h2>
+          <label><span>Nombre</span><input id="miniName" placeholder="Nombre completo"></label>
+          <label><span>Correo</span><input id="miniEmail" type="email" placeholder="correo@email.com"></label>
+          <label><span>Teléfono</span><input id="miniPhone" placeholder="+593"></label>
+        </div>
+        <div class="mini-step" data-mini-step="3">
+          <small>STEP 3 / 3</small><h2>Confirma.</h2>
+          <div class="mini-summary"><span>Vehículo</span><strong id="miniSummaryCar">Toyota RAV4</strong><span>Duración</span><strong id="miniSummaryDays">4 días</strong><span>Total demo</span><strong id="miniSummaryTotal">$232</strong></div>
+          <div class="mini-note">En producción, la reserva se registra directamente en Odoo.</div>
+        </div>
+        <div class="mini-success" data-mini-step="4">
+          <div class="mini-success-icon">✓</div><small>RESERVA DEMO</small><h2>Nos vemos en la carretera.</h2><p id="miniConfirmCode">REM-2026-0000</p>
+        </div>
+        <button class="mini-next" id="miniNext">Continuar</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
